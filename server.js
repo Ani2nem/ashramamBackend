@@ -7,7 +7,7 @@ const app = express();
 // middleware
 const cors = require('cors');
 app.use(cors({
-    origin: CLIENT_URL,
+    origin: process.env.CLIENT_URL,
 }));
 
 // set up bodyParser to read JSON data
