@@ -36,5 +36,5 @@ app.post('/create-payment-intent', async (req, res) => {
     }
 });
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000; //Server is running on port 10000 in production
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`));
